@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: static;
+             /* static는 우리가 아는 기본값(블록태그)이다.
+             그렇기에 좌표는 필요가없다.*/
+        }
+
+        div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: static;
+            top: 200px;
+            left: 300px;
+        }
+
+        div:nth-child(3){
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

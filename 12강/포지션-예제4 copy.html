@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red{
+            width: 100px;
+            height: 100px;
+            background-color: red;      
+        }
+        #yellow{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            top: 0;
+            left: 100px;
+            /* /position: relative의 기준점은 자기자신 블록태그이다.
+            블록태그에 좌표를 주어서 움직일수있게 만들기위해서이다.*/
+        }
+        #blue{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            top: 100px;
+            left: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="yellow">
+        <div id="green"></div>
+        <div id="blue"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 1000px;
+            height: 350px;
+            border: 1px solid #cccccc;   
+            overflow: hidden; 
+            position: relative;
+        }
+        #head{
+            width: 1000px;
+            height: 800px;
+            float: left;
+            position: relative;
+            background-image: url('제주.png');
+            background-size: 100%;
+            font-size: 20px;
+        }
+        
+        h1{
+            color: wheat;
+            font-weight: bold;
+            font-size: 2em;
+            position: absolute;
+            top: 120px;
+            left: 800px;
+            
+        }
+        h3{
+            color: yellow;
+            position: absolute;
+            font-size: 30px;
+            top: 170px;
+            left: 655px;
+        }
+        
+        #nav{
+            width: 990px;
+            background-color: black;
+            text-align: center;
+            height: 50px;
+            padding: 5px;
+            top: 290px;
+            position: absolute;
+        }
+        #nav ul li{
+            text-align: center; 
+            margin: 0 50px;
+            list-style: none;   
+            float: left; 
+        }
+
+        #nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="head">
+            <h1>Joandora</h1>
+            <h3>가장 제주다운 수산리집</h3>
+        </div>
+        <div id="nav">
+            <ul class="menu1">
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">객실소개</a></li>
+                <li><a href="#">예약방법</a></li>
+                <li><a href="#">예약하기</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
