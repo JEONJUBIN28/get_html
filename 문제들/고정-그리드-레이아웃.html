@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 960px;
+            height: 120px;
+            background-color: #066cfa;
+            border-bottom: 1px solid black;
+        }
+        .header-text{
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            line-height: 120px ;
+            /* /line-height는 부모가 정해주는것이기에 부모의 height값을 준다면 자동으로 여백을맞춘다. */
+        }
+        .content{
+            float: left;
+            width: 600px;
+            height: 400px;
+            background-color: #ffd800;
+            padding: 15px;
+        }
+        .right-side{
+            float: left;
+            background-color: #00ff90;
+            width: 300px;
+            height: 400px;
+            padding: 15px;  
+           /* / padding은 상하, 좌우에 공백을주는것이다 그렇기에 옆에 붙는 컨텐츠의 
+           width의값에 padding좌우 값을 더해서 빼줘야한다. */
+        }
+        footer{
+            clear: both;
+            height: 120px;
+            background-color: #c3590a;
+            width: 960px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header-text">고정 그리드 레이아웃</h1>
+    </header>
+
+    <section class="content">
+        <h4>본문</h4>
+    </section>
+
+    <aside class="right-side">
+        <h4>사이드바</h4>
+    </aside>
+
+    <footer>
+        <h4>푸터</h4>
+    </footer>
+</body>
+</html>

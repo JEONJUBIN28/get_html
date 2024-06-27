@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            /* /margin은 외부 상하 좌우의 여백이생기는것, 
+            padding은 내부의 여백이 생겨서 크기가 늘어난다. */
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        #content1{
+            background-color: red;
+        }
+
+        #content2{
+            background-color: blue;
+            padding: 10px;
+        }
+
+        #content3{
+            background-color: orange;
+            margin: 0 auto; 
+            /* /margin: 0 auto는 중앙정렬이다. */
+        }
+    </style>
+</head>
+<body>
+    <div id="content3">200*200</div>
+    <!-- <div id="content1">200*200</div>
+    <div id="content2">200*200</div> -->
+</body>
+</html>

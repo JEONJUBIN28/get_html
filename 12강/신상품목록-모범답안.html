@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 1000px;
+            margin: 20px auto;
+        }
+        h1{
+            text-align: center;
+        }
+        .prod-list{
+            list-style: none;
+            padding: 0;
+            /* /ul이 기본으로 가지고있는 padding을 중앙정렬을위해 지운것 */
+        }
+        .prod-list li{
+            padding: 0;
+            /* /li이 기본으로 가지고있는 padding을 중앙정렬을위해 지운것 */
+            float: left;
+            margin: 10px;
+            /* overflow: hidden; */
+        }
+        h2{
+            margin-top: -5px;
+        }
+        /* .prod-list li img{
+            float: left;
+            /이미지들을 위로 뛰어서 그냥 아래 컨텐츠들을 붙인것이다.
+        } */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>신상품 목록</h1>
+        <ul class="prod-list">
+            <li>
+                <img src="images/prod1.jpg">
+                <div class="caption">
+                    <h2>상품 1</h2>
+                    <p>상품 1 설명 텍스트</p>
+                    <p>가격 : 12,345원</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/prod2.jpg">
+                <div class="caption">
+                    <h2>상품 2</h2>
+                    <p>상품 2 설명 텍스트</p>
+                    <p>가격 : 12,345원</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/prod3.jpg">
+                <div class="caption">
+                    <h2>상품 3</h2>
+                    <p>상품 3 설명 텍스트</p>
+                    <p>가격 : 12,345원</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

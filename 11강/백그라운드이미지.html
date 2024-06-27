@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(1){
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRomeTF1_2AnMb7k4HxOz7k0kapor8P97PeEQ&s');
+            /* /이미지 위에 글을 넣고자한다면 이렇게 div 안에 background-image: 넣어주면된다. */
+            background-size: 100%;
+            /* /이미지 사이즈를 100%한다면 width에 맞게 커진다. */
+        }
+        div:nth-child(2){
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRomeTF1_2AnMb7k4HxOz7k0kapor8P97PeEQ&s');
+            background-size: 50%;
+            /* / size : 50%는 가로, 세로를 (50%)반으로 자르는것이다.
+            전체 면적의 50%가 아니다. */
+        }
+        div:nth-child(3){
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRomeTF1_2AnMb7k4HxOz7k0kapor8P97PeEQ&s');
+            background-repeat: no-repeat;
+            /* /원본만 보고자 한다면 / */
+        }
+    </style>
+</head>
+<body>
+    <div><h1>안녕하세요</h1></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
