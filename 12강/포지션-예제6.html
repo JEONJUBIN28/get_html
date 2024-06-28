@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            position: absolute;
+            /* /body(부모)의 기준으로 기준점을 잡기때문에 margin:0 auto가 먹지않는다. */
+            width: 800px;
+            margin: 0 auto;
+            border: 1px solid #cccccc;
+        }
+        #header{
+            height: 50px;
+            background-color: #cccccc;
+        }
+        #wrap{
+            height: 200px;
+            position: relative;
+        }
+        #content1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px dashed green;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 20;
+        }
+        #content2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 2px dashed green;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 10;
+            /* /어떤것을 위에 띄울때사용 /수가 큰것이 위로뜬다. */
+        }
+        #footer{
+            height: 50px;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">HEADER</div>
+        <div id="wrap">
+            <div id="content1">content1</div>
+            <div id="content2"></div>
+        </div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>
