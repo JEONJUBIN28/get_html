@@ -1,0 +1,58 @@
+<!-- https://studiomeal.com/archives/197
+https://www.w3schools.com/css/css3_flexbox.asp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: dodgerblue;
+            height: 300px;
+            display: flex;
+            /* /부모에 적용시키는 속성, 자식에세 적용시키는 속성이 있다. */
+            flex-direction: column;
+            /* flex-direction : 주축을 결정한다.
+            기본속성(row)은 밑에 있는자식들을 행으로 깔아주는것이다. 
+            x축이 주축이면 y축은 교차축이다.  */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: wrap : 화면을 줄일때 자식들의 크기가 작아지지 않는다.
+            flex-wrap: wrap-revers은 반대이다. */
+            /* flex-flow: row wrap; */
+            /* / flex-direction,flex-wrap을 합친것이다. */
+            justify-content: space-around;
+            /* /justify-content는 정렬을 맞추는것이다. 
+            기본값은 flex-start 왼쪽 정렬, flex-end는 오른쪽 끝이다, center은 중앙
+            space-around는  중앙을 기준으로 정렬, 
+            space-between은 끝을 기준으로 정렬(메뉴를 정렬할때 많이 사용)*/
+            align-items: center;
+            /* /align-items은 교차축 정렬이다. */
+        }
+        .flex-container > div{
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <!-- <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div> -->
+    </div>
+</body>
+</html>

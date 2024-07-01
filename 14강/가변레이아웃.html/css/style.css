@@ -1,0 +1,11 @@
+body{
+    background-color: orange;
+    color: azure;
+    font-size: 3em;
+}
+
+@media screen and (max-width:1024px) {
+    body{
+    background-color: yellow;
+}
+}   
