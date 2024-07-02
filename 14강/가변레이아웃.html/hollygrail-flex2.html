@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            /* width: 100vw; */
+            /* /바디에 있는 기본값 margin때문에 하단에 스크롤바가 생기는것이다. */
+            height: 100vh;
+            /* /가운데 정렬을 위해서 높이의 기준을 정해놔야한다. */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #wrap{
+            width: 60%;
+            height: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }   
+        
+
+
+        header{
+            /* height: 100px; */
+            flex-grow: 1;
+            background-color: blue;
+        }
+
+        section{
+            /* height: 300px; */
+            flex-grow: 2;
+            display: flex;
+        }
+
+        nav{
+            background-color: yellow;
+            flex-grow: 2;
+        }
+
+        aside{
+            background-color: green;
+            flex-grow: 1;
+        }
+
+        footer{
+            background-color: red;
+            /* height: 100px; */
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>헤더</header>
+        <section>
+            <nav>본문</nav>
+            <aside>사이드바</aside>
+        </section>
+        <footer>푸터</footer>
+    </div>
+</body>
+
+</html>
