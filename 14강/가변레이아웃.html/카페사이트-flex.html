@@ -1,67 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #wrap{
-            width: 900px;
-            border: 1px solid #ccc;
-            margin: 0 auto;
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #fff;
+            font-family: "Jeju Gothic",serif;
         }
         header{
-            background: black;
-            width: 900px;
+            background-image: url(images/header.jpg);
+            background-size: cover;
+            margin: 0;
+            height: 300px;
+            width: 100%;
         }
-        #head{
-            display: flex;
-            justify-content: flex-start;
+        nav{
+            height: 50px;
+            background: #000;
         }
-        #head li{
+        #main-nav{
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+        }
+        #main-nav li{
+            display: inline-block;
+            color: #fff;
+            font-family: "맑은 고딕", 돋움;
+            font-size: 0.8em;
+            margin: 5px 15px;
+        }
 
-        }
-        section{
-            
-        }
     </style>
 </head>
+
 <body>
-    <div id="warp">
+    <div id="container">
         <header>
-            <ul id="head">
-                <li><a href="#">카페 소개</a></li>
-                <li><오시는 href="#">오시는 길</a></li>
-                <li><이 href="#">이 달의 추천</a></li>
-            </ul>
+            <nav>
+                <ul id="main-nav">
+                    <li><a href="#">카페 소개</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">이 달의 추천</a></li>
+                </ul>
+            </nav>
         </header>
-        <section><img src="images/header.jpg"></section>
-        <div id="content1">
-            <h1>카페 소개</h1>
-            <img src="images/coffee.jpg">
-            <p>영업 시간 : 오전 시 ~ 밤 10시</p>
-            <p>휴무 : 매주 수요일 (수요일이 공휴일일 경<br>
-            우 수요일 영업, 다음날 휴무)</p>
-        </div>
-        <div id="content2">
+        <section id="intro">
+            <div class="page-title">
+                <h1>카페 소개</h1>
+            </div>
+            <div class="content"></div>
+            <div class="poto">
+                <img src="images/coffee.jpg">
+            </div>
+            <div class="text">
+                <p>영업 시간 : 오전 시 ~ 밤 10시</p>
+                <p>
+                    휴무 : 매주 수요일 (
+                    <i><small> 수요일이 공휴일일 경
+                            우 수요일 영업, 다음날 휴무</small></i>)
+                </p>
+            </div>
+    </div>
+    <section id="map">
+        <div class="page-title">
             <h1>오시는 길</h1>
-            <img src="images/map.jpg">
-            <h3>서귀포시 안덕면 사계리 0000-000</ㅗ>
-            <h3>제주 올레 10코스 산방산 근처</h3>
         </div>
-        <div id="content3">
-            <h1>이 달의 추천</h1>
-            <h3>핸드드립 아이스 커피</h3>
-            <p>1. 1인분 기준으로 서버에 각얼음 5조각(한조각의20cc) 넣고 추출을 시작한다.</p>
-            <p>2. 평상시 보다 원두의 양은 2배 정도(20g)와 추출액액은 얼음 포함해서 200cc까지 내린다.</p>
-            <p>3. 아이스 잔에 얼음 6~7개를 섞어서 시원하게 마신다</p>
-            <img src="images/ice.jpg">
+        <div class="photo">
+            <img src="images/map.jpg" alt="사계 포구에서 서쪽 방향으로 000미터 진행">
         </div>
-        <footer> My times WITH Coffee</footer>
-    </div>
-        
+        <div class="text">
+            <p>서귀포시 안덕면 사계리 0000-000</p>
+            <p>제주 올레 10코스 산방산 근처</p>
+        </div>
+        </div>
+        <section id="choice">
+            <div class="page-title">
+                <h1>이 달의 추천</h1>
+            </div>
+            <div class="photo">
+                <img src="images/ice.jpg" alt="아이스 커피" style="border: 1px solid white; border-radius: 5;">
+            </div>
+            <div class="text">
+                <h3>핸드드립 아이스 커피</h3>
+                <ol>
+                    <li> 1인분 기준으로 서버에 각얼음 5조각(한조각의20cc) 넣고 추출을 시작한다.</li>
+                    <li> 평상시 보다 원두의 양은 2배 정도(20g)와 추출액액은 얼음 포함해서 200cc까지 내린다.</li>
+                    <li> 아이스 잔에 얼음 6~7개를 섞어서 시원하게 마신다</li>
+                </ol>
+            </div>
+        </section>
+        <footer>
+            <p>My times WITH Coffee</p>
+        </footer>
+        </div>
 
 
-    </div>
+
+        </div>
 </body>
+
 </html>
